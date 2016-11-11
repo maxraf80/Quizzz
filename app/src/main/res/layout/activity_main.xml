@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rafa.com.udacity.quizzz.MainActivity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1º ¿How many wheels have a car?"
+        android:textColor="#000"/>
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/radioGroupQuestion1">
+
+
+    <RadioButton
+                android:text="a) 4 wheels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/radioButton"
+                />
+
+            <RadioButton
+                android:text="b) 6 wheels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton"
+                android:layout_marginLeft="25dp"
+                android:layout_alignRight="@+id/radioButton"
+                android:layout_alignEnd="@+id/radioButton"
+                android:id="@+id/radioButton2"/>
+
+            <RadioButton
+                android:text="c) 2 wheels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignRight="@+id/radioButton2"
+                android:layout_marginLeft="25dp"
+                android:layout_alignEnd="@+id/radioButton2"
+                android:id="@+id/radioButton3"/>
+</RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/wheelSolution"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2º ¿What's the power source of a motorbike?"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:inputType="text"
+        android:hint="Enter your answer here"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextQuestion1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/motorbikeSolution"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3º ¿How many wheels have a lorry?"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        />
+    <CheckBox
+        android:text="a) 2 wheels"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/checkBox"
+        android:layout_alignParentBottom="true"/>
+    <CheckBox
+        android:text="b) 4 wheels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/checkBox2"
+        android:layout_alignParentBottom="true"/>
+    <CheckBox
+        android:text="c) 6 or two more wheels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/checkBox3"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/wheelSolution2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4º What was the first car in history?"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupQuestion4">
+        <RadioButton
+            android:text="a) Ford T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/radioButton4"
+            />
+
+        <RadioButton
+            android:text="b) Benz Patent-Motorwagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButton"
+            android:layout_marginLeft="25dp"
+            android:layout_alignRight="@+id/radioButton"
+            android:layout_alignEnd="@+id/radioButton"
+            android:id="@+id/radioButton5" />
+
+        <RadioButton
+            android:text="c) Daimler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButton2"
+            android:layout_alignRight="@+id/radioButton2"
+            android:layout_marginLeft="25dp"
+            android:layout_alignEnd="@+id/radioButton2"
+            android:id="@+id/radioButton6" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/firstCarSolution"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5º ¿What's the name of the pedal used to speed up?"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:inputType="text"
+        android:hint="Enter your answer here"
+        android:id="@+id/checkedTextView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/pedalSolution"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6º Which of these fuels are suitables for cars?"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"/>
+    <CheckBox
+        android:text="a) Gasoline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/checkBox4"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"/>
+    <CheckBox
+        android:text="b) Diesel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/checkBox5"
+        android:layout_alignParentBottom="true"/>
+    <CheckBox
+        android:text="c) Kerosene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/checkBox6"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/fuelSolution"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="check answers"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/CheckAnswer"/>
+
+</LinearLayout>
+</ScrollView>
